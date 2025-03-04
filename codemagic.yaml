@@ -1,6 +1,6 @@
 workflows:
   ios-worflow:
-    name: Sweet Candy Creator
+    name: Event Club Woodbine
     max_build_duration: 120
     integrations:
       app_store_connect: Event Club Woodbine
