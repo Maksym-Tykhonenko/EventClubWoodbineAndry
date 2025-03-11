@@ -10,6 +10,7 @@ import {
   Modal,
   Alert,
   ScrollView,
+  ImageBackground,
 } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import * as ImagePicker from 'react-native-image-picker';
@@ -81,7 +82,8 @@ const AlbumsScreen = () => {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.header}>Event Albums</Text>
+      <ImageBackground style={{flex:1}} source={require('../assets/Background.png')}>
+        <Text style={styles.header}>Event Albums</Text>
 
       {/* Кнопка для створення нового альбому */}
       <TouchableOpacity
@@ -156,6 +158,8 @@ const AlbumsScreen = () => {
           </View>
         </View>
       </Modal>
+      </ImageBackground>
+      
     </View>
   );
 };

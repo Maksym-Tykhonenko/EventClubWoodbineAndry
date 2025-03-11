@@ -9,6 +9,7 @@ import {
   TextInput,
   Modal,
   Alert,
+  ImageBackground
 } from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
@@ -92,10 +93,10 @@ const EventsScreen = () => {
       }
     });
   };
-
+//<Image style={styles.image} source={require('../assets/fon.webp')} />
   return (
     <View style={styles.container}>
-      <Image style={styles.image} source={require('../assets/fon.webp')} />
+      <ImageBackground style={{flex:1}} source={require('../assets/Background.png')}>
       <Text style={styles.header}>Upcoming Events</Text>
 
       <TouchableOpacity
@@ -156,7 +157,7 @@ const EventsScreen = () => {
             </TouchableOpacity>
           </View>
         </View>
-      </Modal>
+      </Modal></ImageBackground>
     </View>
   );
 };

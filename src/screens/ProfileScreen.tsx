@@ -7,6 +7,7 @@ import {
   TouchableOpacity,
   TextInput,
   Alert,
+  ImageBackground
 } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import * as ImagePicker from 'react-native-image-picker';
@@ -95,6 +96,7 @@ const ProfileScreen = () => {
 
   return (
     <View style={styles.container}>
+
       <Image style={styles.image} source={require('../assets/fon.webp')} />
       <TouchableOpacity onPress={pickImage}>
         <Image source={{uri: avatar}} style={styles.avatar} />
@@ -132,6 +134,7 @@ const ProfileScreen = () => {
         onPress={handleLogout}>
         <Text style={styles.buttonText}>Logout</Text>
       </TouchableOpacity>
+
     </View>
   );
 };

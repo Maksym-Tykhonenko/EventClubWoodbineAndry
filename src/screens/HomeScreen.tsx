@@ -10,10 +10,13 @@ import {
   ScrollView,
   RefreshControl,
   TextInput,
+  ImageBackground
 } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import {useNavigation} from '@react-navigation/native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+const windowWidth = Dimensions.get('window').width;
+const windowHeight = Dimensions.get('window').height;
 
 const {width} = Dimensions.get('window');
 
@@ -82,14 +85,14 @@ const HomeScreen = () => {
   const filteredEvents = events.filter(event =>
     event.title.toLowerCase().includes(searchTerm.toLowerCase()),
   );
-
+//<Image style={styles.image} source={require('../assets/fon.webp')} />
   return (
     <ScrollView
       style={styles.container}
       refreshControl={
         <RefreshControl refreshing={refreshing} onRefresh={onRefresh} />
       }>
-      <Image style={styles.image} source={require('../assets/fon.webp')} />
+      <ImageBackground style={{flex:1, height: windowHeight}} source={require('../assets/Background.png')}>
       <Text style={styles.header}>Welcome to Woodbine Club</Text>
 
       {/* Горизонтальний список банерів */}
@@ -159,7 +162,7 @@ const HomeScreen = () => {
             <Text style={styles.eventDate}>{item.date}</Text>
           </TouchableOpacity>
         )}
-      />
+      /></ImageBackground>
     </ScrollView>
   );
 };

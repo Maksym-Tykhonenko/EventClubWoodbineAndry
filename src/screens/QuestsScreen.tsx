@@ -7,6 +7,7 @@ import {
   TextInput,
   StyleSheet,
   Animated,
+  ImageBackground
 } from 'react-native';
 
 const QuestsScreen = () => {
@@ -205,8 +206,11 @@ const QuestsScreen = () => {
 
   return (
     <View style={styles.container}>
+      <ImageBackground style={{ flex: 1 }} source={require('../assets/Background.png')}>
       <Text style={styles.header}>Choose a Quest</Text>
       {renderTestContent()}
+      </ImageBackground>
+      
     </View>
   );
 };
