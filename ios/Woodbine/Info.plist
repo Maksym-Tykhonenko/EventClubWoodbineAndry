@@ -17,18 +17,40 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0.1</string>
+	<string>1.0.2</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>2</string>
+	<string>3</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>scotiabank</string>
+		<string>bmoolbb</string>
+		<string>cibcbanking</string>
+		<string>conexus</string>
+		<string>rbcmobile</string>
+		<string>pcfbanking</string>
+		<string>tdct</string>
+		<string>blank</string>
+		<string>wise</string>
+		<string>bncmobile</string>
+		<string>connexion</string>
+		<string>skrill</string>
+		<string>nl.abnamro.deeplink.psd2.consent</string>
+		<string>nl-snsbank-sign</string>
+		<string>nl-asnbank-sign</string>
+		<string>triodosmobilebanking</string>
+		<string>nbc</string>
+		<string>nbc.ca</string>
+		<string>bncmobile</string>
+		<string>app.nbc.ca</string>
+		<string>revolut</string>
+	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>
-		<false/>
-		<key>NSAllowsLocalNetworking</key>
 		<true/>
 	</dict>
 	<key>NSCameraUsageDescription</key>
@@ -39,6 +61,39 @@
 	<string>To record audio files during video recording</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>This app uses the Photo Library to select a photo only.</string>
+	<key>NSUserTrackingUsageDescription</key>
+	<string>To analyze the effectiveness of our marketing efforts and to improve the interaction with our users</string>
+	<key>SKAdNetworkItems</key>
+	<array>
+		<dict>
+			<key>SKAdNetworkIdentifier</key>
+			<string>cstr6suwn9.skadnetwork</string>
+		</dict>
+		<dict>
+			<key>SKAdNetworkIdentifier</key>
+			<string>v9wttpbfk9.skadnetwork</string>
+		</dict>
+		<dict>
+			<key>SKAdNetworkIdentifier</key>
+			<string>n38lu8286q.skadnetwork</string>
+		</dict>
+		<dict>
+			<key>SKAdNetworkIdentifier</key>
+			<string>lr83yxwka7.skadnetwork</string>
+		</dict>
+		<dict>
+			<key>SKAdNetworkIdentifier</key>
+			<string>f38h382jlk.skadnetwork</string>
+		</dict>
+		<dict>
+			<key>SKAdNetworkIdentifier</key>
+			<string>4pfyvq9l8r.skadnetwork</string>
+		</dict>
+		<dict>
+			<key>SKAdNetworkIdentifier</key>
+			<string>2u9pt9hc89.skadnetwork</string>
+		</dict>
+	</array>
 	<key>UIAppFonts</key>
 	<array>
 		<string>AntDesign.ttf</string>
@@ -60,6 +115,10 @@
 		<string>Octicons.ttf</string>
 		<string>Zocial.ttf</string>
 		<string>Fontisto.ttf</string>
+	</array>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>remote-notification</string>
 	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
